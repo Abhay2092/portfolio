@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import nexamartImg from '../assets/images/nexamart_v2.png';
 import aitripImg from '../assets/images/aitrip_v2.png';
-import casemgmtImg from '../assets/images/casemgmt_v2.png';
+import featImg from '../assets/images/feat_v2.png';
 
 const Projects = () => {
   const projects = [
@@ -27,14 +27,14 @@ const Projects = () => {
       demo: 'https://github.com/Abhay2092/AI-trip-planner' // Placeholder since no live link provided
     },
     {
-      title: 'Case Management System',
-      date: "2024",
-      type: 'Full-Stack Web Application',
-      tech: ['Node.js', 'Express', 'MongoDB'],
-      description: 'Developed a comprehensive case tracking system supporting assignment and lifecycle monitoring. Implemented real-time updates and role-based access control, ensuring organizational data integrity.',
-      image: casemgmtImg,
-      github: 'https://github.com/Abhay2092/Case-Management-System',
-      demo: 'https://github.com/Abhay2092/Case-Management-System' // Placeholder since no live link provided
+      title: 'F.E.A.T (Field Enhanced Awareness Tech)',
+      date: "Mar' 26",
+      type: 'AI Defence System',
+      tech: ['Python', 'OpenCV', 'YOLOv8', 'Edge AI', 'Raspberry Pi'],
+      description: 'Developed an edge-based AI smart visor for real-time threat detection with 0% internet dependency, designed for defence scenarios in DIL environments, ensuring reliable on-device processing. Built an adversarial defence pipeline (Feature Squeezing, Spatial Smoothing) and optimized YOLOv8 (INT8) for embedded systems, achieving 30–60 FPS with accurate detection of camouflaged threats and HUD-based visualization.',
+      image: featImg,
+      github: 'https://github.com/Abhay2092/FEAT',
+      demo: 'https://github.com/Abhay2092/FEAT' // Placeholder since no live link provided
     }
   ];
 

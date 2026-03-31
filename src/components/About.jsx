@@ -53,7 +53,7 @@ const About = () => {
                                 <p className="card-tagline">"Thinking in systems. Solving with logic. Building with purpose."</p>
                                 
                                 <div className="id-tech-stack">
-                                    {["JavaScript", "PHP", "Node.js", "React", "MongoDB"].map((tech, i) => (
+                                    {["JavaScript", "Python", "Node.js", "React", "Edge AI"].map((tech, i) => (
                                         <span key={i} className="id-tech-tag">{tech}</span>
                                     ))}
                                 </div>
