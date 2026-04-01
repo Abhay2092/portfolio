@@ -14,9 +14,9 @@ const Footer = () => {
         </p>
         
         <div className="flex justify-center space-x-6 mb-8">
-          <a href="#" className="font-bold text-gray-text hover:text-brand-blue uppercase tracking-widest transition-colors duration-200">Home</a>
+          <a href="#about" className="font-bold text-gray-text hover:text-brand-blue uppercase tracking-widest transition-colors duration-200">About</a>
+          <a href="#skills" className="font-bold text-gray-text hover:text-brand-blue uppercase tracking-widest transition-colors duration-200">Skills</a>
           <a href="#projects" className="font-bold text-gray-text hover:text-brand-blue uppercase tracking-widest transition-colors duration-200">Projects</a>
-          <a href="#experience" className="font-bold text-gray-text hover:text-brand-blue uppercase tracking-widest transition-colors duration-200">Experience</a>
           <a href="#contact" className="font-bold text-gray-text hover:text-brand-blue uppercase tracking-widest transition-colors duration-200">Contact</a>
         </div>
         

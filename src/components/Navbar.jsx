@@ -15,9 +15,8 @@ const Navbar = () => {
           <div className="hidden lg:block">
             <div className="ml-10 flex items-baseline space-x-6 text-[10px] font-bold tracking-[0.2em] text-gray-text uppercase">
               <a href="#about" className="hover:text-white-text transition-colors duration-200">About</a>
-              <a href="#projects" className="hover:text-white-text transition-colors duration-200">Projects</a>
               <a href="#skills" className="hover:text-white-text transition-colors duration-200">Skills</a>
-              <a href="#problem-solving" className="hover:text-white-text transition-colors duration-200">Skills In Action</a>
+              <a href="#projects" className="hover:text-white-text transition-colors duration-200">Projects</a>
               <a href="#resume" className="hover:text-white-text transition-colors duration-200">Resume</a>
               <a href="#contact" className="px-5 py-2.5 bg-brand-blue text-white-text hover:bg-brand-blue-dark transition-colors duration-200 rounded-sm">Contact Me</a>
             </div>

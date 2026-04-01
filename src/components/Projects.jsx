@@ -14,7 +14,7 @@ const Projects = () => {
       description: 'Built a full-stack marketing platform supporting multi-category product listings and seller onboarding. Implemented robust authentication with session-based login and 15-minute auto-logout.',
       image: nexamartImg,
       github: 'https://github.com/Abhay2092/Nexamart09',
-      demo: 'https://nexamartstore.wuaze.com/'
+      demo: 'https://nexamartstore.wuaze.com/?i=1'
     },
     {
       title: 'AI Trip Planner',
