@@ -42,7 +42,7 @@ const Header = () => {
         };
 
         const observer = new IntersectionObserver(handleIntersect, observerOptions);
-        const sectionIds = ['home', 'about', 'projects', 'skills', 'problem-solving', 'certificates', 'resume', 'contact'];
+        const sectionIds = ['home', 'about', 'education', 'skills', 'projects', 'problem-solving', 'certificates', 'resume', 'contact'];
         
         sectionIds.forEach(id => {
             const el = document.getElementById(id);
@@ -81,11 +81,10 @@ const Header = () => {
                 </div>
 
                 <ul className={`nav-list ${isMenuOpen ? 'active' : ''}`}>
-                    <li><a href="#projects" className={getActiveLinkClass('projects')} onClick={closeMenu}>Projects</a></li>
+                    <li><a href="#about" className={getActiveLinkClass('about')} onClick={closeMenu}>About</a></li>
+                    <li><a href="#education" className={getActiveLinkClass('education')} onClick={closeMenu}>Education</a></li>
                     <li><a href="#skills" className={getActiveLinkClass('skills')} onClick={closeMenu}>Skills</a></li>
-                    <li><a href="#problem-solving" className={getActiveLinkClass('problem-solving')} onClick={closeMenu}>Problem Solving</a></li>
-                    <li><a href="#certificates" className={getActiveLinkClass('certificates')} onClick={closeMenu}>Achievements</a></li>
-                    <li><a href="#resume" className={getActiveLinkClass('resume')} onClick={closeMenu}>Education</a></li>
+                    <li><a href="#projects" className={getActiveLinkClass('projects')} onClick={closeMenu}>Projects</a></li>
                     <li><a href="#resume" className={getActiveLinkClass('resume')} onClick={closeMenu}>Resume</a></li>
                     <li className="mobile-only-link"><a href="#contact" onClick={closeMenu}>Contact</a></li>
                 </ul>

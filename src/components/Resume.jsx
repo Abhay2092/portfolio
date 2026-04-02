@@ -1,29 +1,10 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import './Resume.css';
 import resumePdf from '../assets/documents/Abhay_Choudhary_Resume.pdf';
 import resumePreviewImg from '../assets/images/preview_image_resume.png';
 
 const Resume = () => {
-    const [scrollProgress, setScrollProgress] = useState(0);
-    const timelineRef = useRef(null);
-
-    useEffect(() => {
-        const handleScroll = () => {
-            if (!timelineRef.current) return;
-            const rect = timelineRef.current.getBoundingClientRect();
-            const winHeight = window.innerHeight;
-            const triggerPoint = winHeight * 0.65;
-            const scrolled = triggerPoint - rect.top;
-            let progress = (scrolled / rect.height) * 100;
-            progress = Math.max(0, Math.min(100, progress));
-            setScrollProgress(progress);
-        };
-        window.addEventListener('scroll', handleScroll);
-        handleScroll();
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
-
     const containerVariants = {
       hidden: { opacity: 0 },
       visible: {
@@ -55,54 +36,17 @@ const Resume = () => {
                 >
                     <h4 className="text-sm font-bold text-brand-blue uppercase tracking-[0.2em] mb-2">HISTORY</h4>
                     <h2 className="text-4xl md:text-6xl font-black text-white-text uppercase tracking-tighter">
-                        Education & <span className="text-brand-blue">Resume</span>
+                        My Professional <span className="text-brand-blue">Resume</span>
                     </h2>
                 </motion.div>
 
             <div className="resume-grid">
                 <motion.div 
-                    initial={{ opacity: 0, x: -50 }}
-                    whileInView={{ opacity: 1, x: 0 }}
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 1 }}
-                    className="resume-timeline-col"
-                >
-                    <h3 className="timeline-heading">Education Journey</h3>
-                    <div className="resume-items-wrapper" ref={timelineRef}>
-                        <div 
-                            className="animated-timeline-line" 
-                            style={{ height: `${scrollProgress}%` }}
-                        />
-                        
-                        <div className="resume-item group">
-                            <div className="resume-date">Aug 2023 – Present</div>
-                            <h4 className="group-hover:text-brand-blue transition-colors">B.Tech – Computer Science</h4>
-                            <p>Lovely Professional University</p>
-                            <p className="resume-desc">CGPA: 7.07</p>
-                        </div>
-    
-                        <div className="resume-item group">
-                            <div className="resume-date">Apr 2022 – Mar 2023</div>
-                            <h4 className="group-hover:text-brand-blue transition-colors">Intermediate (12th Grade)</h4>
-                            <p>Army Public School, Meerut</p>
-                            <p className="resume-desc">Percentage: 69.8%</p>
-                        </div>
-    
-                        <div className="resume-item" style={{ borderLeftColor: 'transparent', paddingBottom: 0 }}>
-                            <div className="resume-date">Apr 2020 – Mar 2021</div>
-                            <h4 className="group-hover:text-brand-blue transition-colors">Matriculation (10th Grade)</h4>
-                            <p>Army Public School, Mhow</p>
-                            <p className="resume-desc">Percentage: 83.4%</p>
-                        </div>
-                  </div>
-                </motion.div>
-
-                <motion.div 
-                    initial={{ opacity: 0, x: 50 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 1 }}
-                    className="resume-preview-col"
+                    className="resume-preview-col mx-auto max-w-2xl"
                 >
                     <div className="resume-card-container">
                         <motion.div 

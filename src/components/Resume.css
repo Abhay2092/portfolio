@@ -1,8 +1,7 @@
 /* Adjustments for Resume module over App.css */
 .resume-grid {
-    display: grid;
-    grid-template-columns: 1.3fr 1fr;
-    gap: 8rem;
+    display: flex;
+    justify-content: center;
     max-width: 1250px;
     width: 100%;
     margin: 0 auto;
